@@ -143,7 +143,6 @@ public extension UIView {
   }
 
   // TODO: can be moved to internal later (will still be accessible via IB)
-  @available(*, deprecated, message: "Use hero.modifierString instead")
   @IBInspectable var heroModifierString: String? {
     get { fatalError("Reverse lookup is not supported") }
     set { hero.modifiers = newValue?.parse() }
