@@ -116,27 +116,27 @@ public extension UIView {
   }
 
   // TODO: can be moved to internal later (will still be accessible via IB)
-  @available(*, deprecated, message: "Use hero.id instead")
+//  @available(*, deprecated, message: "Use hero.id instead")
   @IBInspectable var heroID: String? {
     get { return hero.id }
     set { hero.id = newValue }
   }
 
   // TODO: can be moved to internal later (will still be accessible via IB)
-  @available(*, deprecated, message: "Use hero.isEnabled instead")
+//  @available(*, deprecated, message: "Use hero.isEnabled instead")
   @IBInspectable var isHeroEnabled: Bool {
     get { return hero.isEnabled }
     set { hero.isEnabled = newValue }
   }
 
   // TODO: can be moved to internal later (will still be accessible via IB)
-  @available(*, deprecated, message: "Use hero.isEnabledForSubviews instead")
+//  @available(*, deprecated, message: "Use hero.isEnabledForSubviews instead")
   @IBInspectable var isHeroEnabledForSubviews: Bool {
     get { return hero.isEnabledForSubviews }
     set { hero.isEnabledForSubviews = newValue }
   }
 
-  @available(*, deprecated, message: "Use hero.modifiers instead")
+//  @available(*, deprecated, message: "Use hero.modifiers instead")
   public var heroModifiers: [HeroModifier]? {
     get { return hero.modifiers }
     set { hero.modifiers = newValue }

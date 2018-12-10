@@ -100,7 +100,7 @@ public extension UIViewController {
     static var heroConfig = "heroConfig"
   }
 
-  @available(*, deprecated, message: "Use hero.config instead")
+//  @available(*, deprecated, message: "Use hero.config instead")
   internal var heroConfig: HeroViewControllerConfig {
     get { return hero.config }
     set { hero.config = newValue }
@@ -122,19 +122,19 @@ public extension UIViewController {
     set { hero.config.storedSnapshot = newValue }
   }
 
-  @available(*, deprecated, message: "Use hero.modalAnimationType instead")
+//  @available(*, deprecated, message: "Use hero.modalAnimationType instead")
   public var heroModalAnimationType: HeroDefaultAnimationType {
     get { return hero.modalAnimationType }
     set { hero.modalAnimationType = newValue }
   }
 
-  @available(*, deprecated, message: "Use hero.modalAnimationTypeString instead")
+//  @available(*, deprecated, message: "Use hero.modalAnimationTypeString instead")
   @IBInspectable public var heroModalAnimationTypeString: String? {
     get { return hero.modalAnimationTypeString }
     set { hero.modalAnimationTypeString = newValue }
   }
 
-  @available(*, deprecated, message: "Use hero.isEnabled instead")
+//  @available(*, deprecated, message: "Use hero.isEnabled instead")
   @IBInspectable public var isHeroEnabled: Bool {
     get { return hero.isEnabled }
     set { hero.isEnabled = newValue }
@@ -156,14 +156,14 @@ public extension HeroExtension where Base: UINavigationController {
 }
 
 extension UINavigationController {
-  @available(*, deprecated, message: "Use hero.navigationAnimationType instead")
+//  @available(*, deprecated, message: "Use hero.navigationAnimationType instead")
   public var heroNavigationAnimationType: HeroDefaultAnimationType {
     get { return hero.navigationAnimationType }
     set { hero.navigationAnimationType = newValue }
   }
 
   // TODO: can be moved to internal later (will still be accessible via IB)
-  @available(*, deprecated, message: "Use hero.navigationAnimationTypeString instead")
+//  @available(*, deprecated, message: "Use hero.navigationAnimationTypeString instead")
   @IBInspectable public var heroNavigationAnimationTypeString: String? {
     get { return hero.navigationAnimationTypeString }
     set { hero.navigationAnimationTypeString = newValue }
@@ -185,14 +185,14 @@ public extension HeroExtension where Base: UITabBarController {
 }
 
 extension UITabBarController {
-  @available(*, deprecated, message: "Use hero.tabBarAnimationType instead")
+//  @available(*, deprecated, message: "Use hero.tabBarAnimationType instead")
   public var heroTabBarAnimationType: HeroDefaultAnimationType {
     get { return hero.tabBarAnimationType }
     set { hero.tabBarAnimationType = newValue }
   }
 
   // TODO: can be moved to internal later (will still be accessible via IB)
-  @available(*, deprecated, message: "Use hero.tabBarAnimationTypeString instead")
+//  @available(*, deprecated, message: "Use hero.tabBarAnimationTypeString instead")
   @IBInspectable public var heroTabBarAnimationTypeString: String? {
     get { return hero.tabBarAnimationTypeString }
     set { hero.tabBarAnimationTypeString = newValue }
